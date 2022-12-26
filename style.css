@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+:root{
+    --tipografia: 'Nunito', sans-serif;
+    --colorprimario:  blueviolet; 
+}
+.contenedorlogo{
+    display: flex;
+    align-items: center;
+}
+.contenedorbusqueda{
+    display: flex;
+    align-items: center;   
+
+}
+a{
+    text-decoration: none;
+    font-family: var(--tipografia);
+    font-size: 1rem;
+}
+h1{
+    padding: 5px;
+}
+form{
+    padding: 5px;
+}
+.lupita{
+    position: absolute;
+    margin-left: 9px;
+    margin-top: 5px;
+    color: black;
+}
+input{
+    padding: 5px;
+    width: 300px;
+}
+.iconologo{
+    font-size: 30px;
+    color: white;
+    background-color: var(--colorprimario);
+}
+nav>a{
+    padding: 5px;
+}
+.iconobuscar{
+    font-size: 20px;
+    color: black;
+}
+button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: transparent;
+    background-image: url(./Captura.PNG);
+    background-position: center;
+
+}
+.contenedorfinal{
+    padding-left: 15rem;
+    display: flex;
+    align-items: center;
+}
+.contenedorfinal>a{
+    padding: 5px;
+    font-size: 20px;
+}
+.hamburguesa{
+    display: none;
+    color: black;
+}
+
+@media(max-width:996px){
+    input{
+        width:200px;
+    }
+}
+@media(max-width:944px){
+    form, nav, .contenedorfinal{
+        display: none;
+    }
+    .hamburguesa{
+        display: block;
+    }
+
+}
